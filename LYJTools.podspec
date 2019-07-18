@@ -2,32 +2,89 @@
 
 Pod::Spec.new do |spec|
 
-s.name             = "LYJTools"
-s.version          = "1.0.0"
-s.summary          = "A marquee view used on iOS."
-s.description      = <<-DESC
-It is a marquee view used on iOS, which implement by Objective-C.
-DESC
-s.homepage         = "https://github.com/liyinjie01/LYJTools"
-# s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-s.license          = 'MIT'
-s.author           = { "李荫杰" => "243349852@qq.com" }
-s.source           = { :git => "https://github.com/liyinjie01/LYJTools.git", :tag => s.version.to_s }
-# s.social_media_url = 'https://twitter.com/NAME'
-
-s.platform     = :ios, '4.3'
-# s.ios.deployment_target = '5.0'
-# s.osx.deployment_target = '10.7'
-s.requires_arc = true
-
-s.source_files = 'LYJTools/*'
-# s.resources = 'Assets'
-
-# s.ios.exclude_files = 'Classes/osx'
-# s.osx.exclude_files = 'Classes/ios'
-# s.public_header_files = 'Classes/**/*.h'
-s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
 
 
+  spec.name         = "LYJTools"
+  spec.version      = "1.0.0"
+  spec.summary      = "A short description of LYJTools."
+
+
+  spec.description  = <<-DESC
+my tools
+                   DESC
+
+  spec.homepage     = "https://github.com/liyinjie01/LYJTools"
+
+
+
+   spec.license      = { :type => "MIT", :file => "LICENSE" }
+
+
+
+  spec.author             = { "liyinjie" => "243349852@qq.com" }
+
+
+
+
+
+  spec.source       = { :git => "https://github.com/liyinjie01/LYJTools.git", :tag => "#{spec.version}" }
+
+
+
+  spec.source_files  = "SourceFiles"
+  spec.exclude_files = "Classes/Exclude"
+
+
+
+#build的平台
+spec.platform     = :ios, "8.0"
+#最低开发
+spec.ios.deployment_target = "8.0"
+
+#开源库作者
+spec.author        = { "" => "" }
+#社交网址
+spec.social_media_url = 'https://github.com/wnkpzzz'
+
+  # spec.public_header_files = "Classes/**/*.h"
+
+
+  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  A list of resources included with the Pod. These are copied into the
+  #  target bundle with a build phase script. Anything else will be cleaned.
+  #  You can preserve files from being cleaned, please don't preserve
+  #  non-essential files like tests, examples and documentation.
+  #
+
+  # spec.resource  = "icon.png"
+  # spec.resources = "Resources/*.png"
+
+  # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
+
+
+  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Link your library with frameworks, or libraries. Libraries do not include
+  #  the lib prefix of their name.
+  #
+
+  # spec.framework  = "SomeFramework"
+  # spec.frameworks = "SomeFramework", "AnotherFramework"
+
+  # spec.library   = "iconv"
+  # spec.libraries = "iconv", "xml2"
+
+
+  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  If your library depends on compiler flags you can set them in the xcconfig hash
+  #  where they will only apply to your library. If you depend on other Podspecs
+  #  you can include multiple dependencies to ensure it works.
+
+  # spec.requires_arc = true
+
+  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  # spec.dependency "JSONKit", "~> 1.4"
 
 end
